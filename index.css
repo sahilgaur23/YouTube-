@@ -1,0 +1,172 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+.top-menu {
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.menu {
+    width: 12px;
+    height: 18px;
+    margin-left: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin-right: 180px;
+}
+
+
+.text {
+    width: 310px;
+
+    padding: 4px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 14px 0 0 14px;
+    outline: none;
+    background-color: white;
+    color: black;
+}
+
+/* Search button with icon */
+.search_bar {
+    padding: 2px 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #f8f8f8;
+    border-radius: 0 14px 14px 0;
+    cursor: pointer;
+}
+
+.search_bar img {
+    width: 20px;
+    height: 20px;
+}
+
+.micro_logo {
+    background: none;
+    border: none;
+    margin-left: 2px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.micro_logo img {
+    width: 24px;
+    height: 24px;
+    margin-right: 100px;
+}
+
+.create {
+
+    padding: 6px 6px;
+    border: 1px solid #ccc;
+    border-radius: 14px 14px;
+    color: black;
+    cursor: pointer;
+
+}
+
+.bell {
+    background: none;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.bell img {
+    width: 22px;
+    height: 20px;
+}
+
+.log_in {
+    background: none;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.log_in img {
+    width: 28px;
+    height: 28px;
+}
+
+/* === SIDEBAR === */
+.sidebar {
+    width: 200px;
+    background-color: white;
+    border-right: 1px solid #ddd;
+    height: calc(100vh - 60px);
+    /* Viewport height minus top menu */
+    position: fixed;
+    top: 60px;
+    /* Same as .top-menu height */
+    left: 0;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: auto;
+}
+
+/* Sidebar buttons */
+.sidebar button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: none;
+    background: none;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+    color: #000;
+    transition: background-color 0.2s;
+}
+
+.sidebar button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Sidebar icons */
+.sidebar img {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+}
+
+/* Scrollbar style */
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.sidebar hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+    width: 100%;
+    align-self: center;
+}
